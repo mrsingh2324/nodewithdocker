@@ -10,6 +10,11 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
   res.send('About Page - This is a simple Express server.');
 });
+
+app.get('/contact', (req, res) => {
+  res.send('Contact Page - This is a simple Express server.');
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
